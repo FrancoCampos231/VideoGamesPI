@@ -1,0 +1,7 @@
+.conteiner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 15px;
+    border: 1px solid black;
+}

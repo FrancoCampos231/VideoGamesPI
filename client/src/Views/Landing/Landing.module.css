@@ -1,0 +1,94 @@
+.buttonHome {
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: border-color 0.5s ease-in-out;
+    animation: neon-transition 3s linear infinite;
+}
+
+.buttonHome:hover {
+    border-color: #00eaff;
+}
+
+@keyframes neon-transition {
+    0% {
+      background-position: -200% 0;
+      border-color: #00eaff;
+      color: #ffffff;
+    }
+    50% {
+      background-position: 200% 0;
+      border-color: #ff00ff;
+      color: #ff00ff;
+    }
+    100% {
+      background-position: -200% 0;
+      border-color: #00eaff;
+      color: #ffffff;
+    }
+  }
+
+.containerLanding {
+
+    background-image: url(../../ImagesAndGifs/Landign.gif);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+}
+
+.containerLanding img {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+}
+
+.fountText {
+    text-align: start center;
+    font-family: 'Lucida Console', monospace;
+    font-size: 48px;
+    color: #ffffff;
+    text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff, 0 0 40px #00eaff, 0 0 70px #00eaff, 0 0 80px #00eaff, 0 0 100px #00eaff, 0 0 150px #00eaff;
+    animation: neon-glow 1s ease-in-out infinite alternate;
+    
+}
+
+@keyframes neon-glow {
+    0% {
+      color: #f72585; /* Color 1 */
+      border-color: #f72585; /* Color 1 */
+    }
+    25% {
+      color: #7209b7; /* Color 2 */
+      border-color: #7209b7; /* Color 2 */
+    }
+    50% {
+      color: #3a0ca3; /* Color 3 */
+      border-color: #3a0ca3; /* Color 3 */
+    }
+    75% {
+      color: #4361ee; /* Color 4 */
+      border-color: #4361ee; /* Color 4 */
+    }
+    100% {
+      color: #4cc9f0; /* Color 1 */
+      border-color: #4cc9f0; /* Color 1 */
+    }
+  }
